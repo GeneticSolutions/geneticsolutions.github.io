@@ -1,4 +1,0 @@
----
-title: Genetic Solutions
----
-
