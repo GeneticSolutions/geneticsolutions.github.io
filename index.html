@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Genetic Solutions</title>
+    <title>Genetic Solutions - Affordable and Accurate Ancestry Results</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -21,7 +21,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -41,8 +41,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         .logo {
@@ -86,116 +84,101 @@
             background: linear-gradient(135deg, #5a67d8, #7c3aed) !important;
         }
 
-        /* Main Content */
-        .main-content {
-            background: white;
-            margin: 2rem auto;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .page-header {
-            background: linear-gradient(135deg, #4c51bf, #667eea);
-            color: white;
+        /* Hero Section */
+        .hero {
             text-align: center;
-            padding: 3rem 2rem;
+            padding: 4rem 0;
+            color: white;
         }
 
-        .page-header h1 {
-            font-size: 2.5rem;
+        .hero h1 {
+            font-size: 3.5rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
         }
 
-        .page-header p {
-            font-size: 1.1rem;
+        .hero p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
             opacity: 0.9;
         }
 
-        .content-section {
-            padding: 3rem;
+        .hero-image {
+            margin: 2rem 0;
         }
 
-        .faq-item {
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #e2e8f0;
+        .hero-image img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
 
-        .faq-item:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
+        /* Features Section */
+        .features {
+            background: white;
+            padding: 4rem 0;
+            margin-top: 2rem;
         }
 
-        .faq-question {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2d3748;
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
             margin-bottom: 1rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
         }
 
-        .question-icon {
-            color: #4c51bf;
+        .feature-card h3 {
             font-size: 1.25rem;
-            margin-top: 0.25rem;
-            flex-shrink: 0;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #2d3748;
         }
 
-        .faq-answer {
+        .feature-card p {
             color: #4a5568;
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-left: 2rem;
+            line-height: 1.6;
         }
 
-        .faq-answer p {
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3748;
             margin-bottom: 1rem;
         }
 
-        .faq-answer p:last-child {
-            margin-bottom: 0;
-        }
-
-        .highlight-link {
-            color: #4c51bf;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-
-        .highlight-link:hover {
-            border-bottom-color: #4c51bf;
-        }
-
-        .info-box {
-            background: #f0f4ff;
-            border-left: 4px solid #4c51bf;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 0 10px 10px 0;
-        }
-
-        .info-box p {
-            margin: 0;
-            color: #2d3748;
-            font-weight: 500;
-        }
-
-        .delivery-time {
-            background: #f0fff4;
-            border-left-color: #38a169;
-            color: #2f855a;
-        }
-
-        .tech-highlight {
-            background: #fffbf0;
-            border-left-color: #ed8936;
-            color: #c05621;
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #718096;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         /* Footer */
@@ -204,6 +187,7 @@
             color: white;
             text-align: center;
             padding: 2rem 0;
+            margin-top: 4rem;
         }
 
         footer a {
@@ -218,33 +202,21 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-
             .nav-links {
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .page-header {
-                padding: 2rem 1rem;
+            .hero h1 {
+                font-size: 2.5rem;
             }
 
-            .page-header h1 {
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
                 font-size: 2rem;
-            }
-
-            .content-section {
-                padding: 2rem 1.5rem;
-            }
-
-            .faq-question {
-                font-size: 1.25rem;
-            }
-
-            .faq-answer {
-                margin-left: 1rem;
             }
         }
     </style>
@@ -255,105 +227,49 @@
         <nav class="container">
             <div class="logo">Genetic Solutions</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="mailto:geneticsolutionscorp@gmail.com">Contact</a></li>
                 <li><a href="https://ko-fi.com/c/97a36f1a18" class="cta-button">Buy Now</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <div class="main-content">
-            <div class="page-header">
-                <h1>Frequently Asked Questions</h1>
-                <p>Everything you need to know about our genetic ancestry services</p>
+    <main>
+        <section class="hero container">
+            <h1>Discover Your Ancient Heritage</h1>
+            <p>Unlock the secrets of your ancestry with cutting-edge genetic analysis. Professional results at an affordable price - starting at just $15.</p>
+            
+            <div class="hero-image">
+                <img src="logo.webp" alt="Genetic Solutions Logo" />
             </div>
+        </section>
 
-            <div class="content-section">
-                <div class="faq-item">
-                    <h2 class="faq-question">
-                        <span class="question-icon">❓</span>
-                        Why Choose Genetic Solutions?
-                    </h2>
-                    <div class="faq-answer">
-                        <p>At Genetic Solutions, we are committed to redefining the online ancestry service industry by delivering high-quality results at an affordable and accessible price. Our mission is to provide cutting-edge genetic insights using top-tier resources without the excessive costs often associated with such services.</p>
-                        
-                        <p>While others may charge multiple times as much, we strive to make these services accessible to everyone, breaking down barriers and opening the door to self-discovery for all, <strong>starting our full package at just $15 USD</strong>.</p>
-                        
-                        <div class="info-box">
-                            <p>Genetic Solutions is a catalyst for exploration and understanding, bringing a fresh and inclusive approach to the ancestry market. Join us as we bridge the gap between advanced technology and affordability, creating a service everyone can trust and afford.</p>
-                        </div>
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">What You'll Discover</h2>
+                <p class="section-subtitle">Comprehensive genetic insights powered by Harvard University's AdmixTools technology</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🧬</div>
+                        <h3>Ancient Ancestry</h3>
+                        <p>Trace your lineage back thousands of years with detailed Neolithic ancestry breakdowns</p>
                     </div>
-                </div>
-
-                <div class="faq-item">
-                    <h2 class="faq-question">
-                        <span class="question-icon">📋</span>
-                        How Do I Get My DNA Report?
-                    </h2>
-                    <div class="faq-answer">
-                        <p>To get your Ancestry report, you must have a pre-existing DNA test (preferably through <strong>AncestryDNA, 23AndMe, or MyHeritage</strong>). From there, simply download your raw DNA file and send it to us via our Ko-Fi page. Please be sure to follow the instructions provided.</p>
-                        
-                        <p><a href="https://ko-fi.com/c/97a36f1a18" class="highlight-link">Purchase from our Ko-Fi page here →</a></p>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🗺️</div>
+                        <h3>Migration Patterns</h3>
+                        <p>Understand how your ancestors moved across continents throughout history</p>
                     </div>
-                </div>
-
-                <div class="faq-item">
-                    <h2 class="faq-question">
-                        <span class="question-icon">⏱️</span>
-                        How Long Does Delivery Take?
-                    </h2>
-                    <div class="faq-answer">
-                        <div class="info-box delivery-time">
-                            <p><strong>Usually between 1-3 business days.</strong></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <h2 class="faq-question">
-                        <span class="question-icon">📄</span>
-                        What Will My Results Look Like?
-                    </h2>
-                    <div class="faq-answer">
-                        <p>Once completed, your full package will be delivered in <strong>PDF format</strong>. It will include everything described in the package description, such as:</p>
-                        
-                        <div class="info-box">
-                            <p>✓ Neolithic Ancestry Breakdown<br>
-                            ✓ Y-DNA Haplogroup Prediction<br>
-                            ✓ Phenotype Prediction<br>
-                            ✓ And much more comprehensive genetic insights</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <h2 class="faq-question">
-                        <span class="question-icon">🔬</span>
-                        What Technology Powers Our Analysis?
-                    </h2>
-                    <div class="faq-answer">
-                        <div class="info-box tech-highlight">
-                            <p>We leverage <strong>Harvard University's AdmixTools software</strong>, which was developed by ReichLabs for the sole purpose of determining population admixture. This is practically the <strong>GOLD STANDARD</strong> for ancient ancestry breakdowns.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <h2 class="faq-question">
-                        <span class="question-icon">💬</span>
-                        Have Questions About Your Results?
-                    </h2>
-                    <div class="faq-answer">
-                        <p>We are willing to assist those who have inquiries about our package. Please contact us at <a href="mailto:geneticsolutionscorp@gmail.com" class="highlight-link">geneticsolutionscorp@gmail.com</a>, and we will promptly answer your inquiry.</p>
-                        
-                        <div class="info-box">
-                            <p><strong>Our support line runs 24/7</strong> - we're here whenever you need us.</p>
-                        </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h3>Phenotype Analysis</h3>
+                        <p>Discover physical traits and characteristics inherited from your ancestors</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
